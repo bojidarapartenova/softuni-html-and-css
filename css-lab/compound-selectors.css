@@ -1,0 +1,26 @@
+p.highlighted {
+    color: dodgerblue;
+}
+
+div#important-box {
+    background-color: gold;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+li.important {
+    color: cadetblue;
+}
+
+li.important.alt {
+    color: red;
+    font-style: italic;
+}
+
+a.fancy-link {
+    color: gold;
+    border-bottom: 1px solid gold;
+}
+
+p.multi {
+    color: blue;
+}
