@@ -1,0 +1,40 @@
+h1,
+h2,
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+nav,
+header,
+section,
+footer {
+    margin: 20px;
+    padding: 15px;
+}
+
+nav a:hover {
+    background-color: pink;
+}
+
+nav a,
+header p,
+section p,
+footer p,
+section h1 {
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+nav,
+header,
+section,
+footer {
+    outline: 1px solid lightgray;
+}
