@@ -1,0 +1,27 @@
+section p {
+    color: darkslategray;
+}
+
+.highlighted+article p {
+    background-color: pink;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#pink {
+    color: pink;
+}
+
+ul ul li {
+    color: darkblue;
+}
+
+ul ul li.blue+li {
+    color: darkgreen;
+}
+
+h2~p {
+    color: cornflowerblue;
+}
