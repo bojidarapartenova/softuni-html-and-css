@@ -1,0 +1,35 @@
+ul li a {
+    text-decoration: none;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+#italic {
+    font-style: italic;
+}
+
+#decorated-title {
+    color: black;
+}
+
+#decorated-title::before {
+    content: ">>";
+    color: red;
+    margin-right: 3px;
+}
+
+#decorated-title::after {
+    content: "<<";
+    color: red;
+    margin-left: 3px;
+}
+
+section {
+    background-color: lightskyblue;
+}
+
+img {
+    border: red solid 10px;
+}
