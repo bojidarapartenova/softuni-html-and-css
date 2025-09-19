@@ -1,0 +1,49 @@
+body {
+    margin: 50px 200px;
+}
+
+.box {
+    border: 1px dashed #999;
+    padding: 30px;
+    position: relative;
+}
+
+.box::before {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.content {
+    background-color: skyblue;
+    text-align: center;
+}
+
+.content::before {
+    content: "Content";
+    position: static;
+}
+
+.padding {
+    background-color: lightgreen;
+}
+
+.padding::before {
+    content: "padding";
+}
+
+.border {
+    background-color: bisque;
+}
+
+.border::before {
+    content: "border";
+}
+
+.margin {
+    background-color: lightsalmon;
+}
+
+.margin::before {
+    content: "margin";
+}
