@@ -1,0 +1,80 @@
+body {
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    background: #ddd;
+    border: 1px solid #999;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.row {
+    display: flex;
+    gap: 5px;
+}
+
+.key {
+    background: white;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    flex: 1;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.key.backspace {
+    flex: 2;
+}
+
+.key.tab {
+    flex: 2;
+}
+
+.key.capsLock {
+    flex: 2;
+}
+
+.key.shift {
+    flex: 2.5;
+}
+
+.key.space {
+    flex: 8;
+}
+
+.key.enter {
+    flex: 1.5;
+    border-radius: 5px 5px 0 5px;
+    position: relative;
+}
+
+.enter-bottom {
+    position: absolute;
+    left: 22px;
+    bottom: -57px;
+    background-color: white;
+    height: 61px;
+    width: 69.7px;
+    border-radius: 0 0 5px 5px;
+}
+
+#special {
+    background-color: #ddd;
+}

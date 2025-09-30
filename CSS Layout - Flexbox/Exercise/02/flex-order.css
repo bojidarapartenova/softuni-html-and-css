@@ -1,0 +1,56 @@
+body {
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    margin: 0;
+}
+
+.layout {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 6px;
+    background: white;
+    flex: 1;
+}
+
+.layout1 main {
+    order: 1;
+    flex-grow: 3;
+}
+
+.layout1 aside {
+    order: 2;
+    flex-grow: 1;
+}
+
+.layout2 main {
+    order: 2;
+    flex-grow: 3;
+}
+
+.layout2 aside {
+    order: 1;
+    flex-grow: 1;
+}

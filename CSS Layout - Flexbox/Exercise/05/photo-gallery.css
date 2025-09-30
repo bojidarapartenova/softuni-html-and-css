@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ddd;
+    margin: 30px 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.gallery {
+    display: flex;
+    gap: 2rem;
+    gap: 30px;
+}
+
+.frame {
+    border: 5px solid black;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0.5rem;
+}
+
+img {
+    width: 100%;
+}
+
+footer {
+    padding: 0.5rem;
+    color: gray;
+    font-style: italic;
+}
