@@ -89,6 +89,107 @@ ol {
     transition: all 300ms ease-in-out;
 }
 
+.hero .content {
+    max-width: 600px;
+    padding: 3rem 1rem;
+    overflow: hidden;
+}
+
+.genericSection .maxedContent,
+.reversedSection .maxedContent {
+    padding: 3rem 1rem;
+}
+
+.hero .maxedContent .info,
+.genericSection .maxedContent .info,
+.reversedSection .maxedContent .info {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero .maxedContent .img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.hero .maxedContent .info .note {
+    color: gray;
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+.hero .maxedContent .circleEffect {
+    display: none;
+}
+
+.hero .maxedContent .info .note:last-child {
+    margin-top: 0.5rem;
+}
+
+.hero .maxedContent .info .desc,
+.genericSection .maxedContent .info .desc,
+.reversedSection .maxedContent .info .desc {
+    margin-bottom: 1.5rem;
+}
+
+.hero .content .info .title,
+.genericSection .maxedContent .info .title,
+.reversedSection .maxedContent .info .title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.genericSection .maxedContent {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.genericSection .maxedContent .img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.reversedSection .maxedContent .img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.reversedSection .link {
+    text-decoration: none;
+    color: var(--purple);
+    border: 1px solid var(--purple);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    transition: color 300ms ease-in-out;
+}
+
+.reversedSection .maxedContent .img {
+    margin-top: 2rem;
+}
+
+footer {
+    background-color: #3c396a;
+    color: #ed4dff;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    padding: 2rem;
+    line-height: 1.5rem;
+}
+
+footer a,
+footer p {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
 @media (hover:hover) {
     .header .nav .list .link:hover {
         color: var(--purple);
@@ -97,6 +198,11 @@ ol {
     .header .nav .list .link.btn:hover {
         color: var(--white);
         background-color: var(--accent-blue);
+    }
+
+    .reversedSection .link:hover {
+        color: var(--white);
+        background-color: var(--purple);
     }
 }
 
@@ -116,5 +222,101 @@ ol {
 
     .header .nav .list {
         flex-direction: row;
+    }
+}
+
+@media(min-width:768px) {
+
+    .hero .content,
+    .genericSection .content,
+    .reversedSection .content {
+        position: relative;
+        padding: 3rem 2rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        max-width: unset;
+    }
+
+    .hero .img,
+    .genericSection .img,
+    .reversedSection .img {
+        order: 1;
+        width: 300px;
+        flex-shrink: 0;
+    }
+
+    .reversedSection .img {
+        order: -1;
+    }
+
+    .hero .info,
+    .genericSection .info,
+    .reversedSection .info {
+        flex-grow: 1;
+        max-width: unset;
+        margin: unset;
+    }
+
+    .hero .content .info .title,
+    .genericSection .content .info .title,
+    .reversedSection .content .info .title {
+        text-align: left;
+    }
+
+    .hero .content .circleEffect {
+        display: block;
+        position: absolute;
+        max-width: unset;
+        width: 400px;
+        background-color: var(--dark-blue);
+        border-radius: 100%;
+        aspect-ratio: 1/1;
+        top: -50%;
+        right: -3%;
+        z-index: -1;
+    }
+
+    .hero .content .circleEffect .icon {
+        position: absolute;
+        top: 25%;
+        right: 10%;
+    }
+
+    .genericSection .img {
+        position: relative;
+        top: 100px;
+    }
+
+    footer .maxedContent {
+        display: flex;
+        gap: 3rem;
+        text-align: left;
+        margin: 0 auto;
+        max-width: unset;
+    }
+}
+
+
+@media (min-width:1024px) {
+    .hero .content {
+        padding: 3rem 4rem;
+    }
+
+    .hero .img {
+        width: 400px;
+    }
+
+    .hero .content .circleEffect {
+        width: 450px;
+        top: -50%;
+        right: -3%;
+        z-index: -1;
+    }
+
+    .hero .content .circleEffect .icon {
+        position: absolute;
+        top: 30%;
+        right: 10%;
     }
 }
