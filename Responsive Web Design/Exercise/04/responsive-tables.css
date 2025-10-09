@@ -5,99 +5,90 @@
 }
 
 body {
-    background: #e6e6e6;
-    font-family: system-ui, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-    padding: 2rem;
+    background-color: #eee;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    width: 100%;
-    max-width: 1200px;
+    gap: 2rem;
+    margin: 3rem;
+    align-self: center;
 }
 
 .table-card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 0.25rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
 }
 
-.table-title {
-    font-size: 1.4rem;
-    font-weight: 700;
-    padding: 1rem 1.5rem;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-thead {
-    background: #f0f0f0;
-}
-
-th,
-td {
-    padding: 0.75rem 1rem;
-    border-bottom: 1px solid #ddd;
+.table tr {
+    display: flex;
+    flex-direction: column;
     text-align: left;
 }
 
-th {
-    font-weight: 700;
+.table .long {
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-@media (max-width: 600px) {
-    .container {
-        flex-direction: column;
-    }
+h2 {
+    padding: 1rem;
+}
 
-    th,
-    td {
-        display: flex;
-        justify-content: space-between;
-        border: none;
-        border-bottom: 1px solid #ccc;
-    }
+.table {
+    display: flex;
+    gap: 2rem;
+    border-top: 2px solid #333;
+}
 
-    thead {
+.table th,
+.table td {
+    padding: 0.5rem;
+}
+
+.table td {
+    color: gray;
+}
+
+.bigTable {
+    display: none;
+}
+
+@media(min-width:600px) {
+    .long {
+        width: 180px;
+    }
+}
+
+@media(min-width:800px) {
+    .table {
         display: none;
     }
 
-    tr {
-        display: flex;
-        flex-direction: column;
-        border-bottom: 2px solid #000;
-        padding: 0.5rem 0;
+    .bigTable {
+        display: table;
+        width: 100%;
+        border-collapse: collapse;
     }
 
-    td::before {
-        content: attr(data-label);
-        font-weight: bold;
-    }
-}
-
-@media (min-width: 601px) and (max-width: 799px) {
-    .container {
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 800px) {
-    .container {
-        flex-direction: row;
-        justify-content: space-between;
+    .bigTable th,
+    .bigTable td {
+        padding: 0.5rem;
+        text-align: left;
+        border-bottom: 1px solid #ccc;
     }
 
-    .table-card {
-        flex: 1;
+    .bigTable thead {
+        background-color: #eee;
+        border-top: 1px solid #ccc;
+    }
+
+    .bigTable tr:last-child td {
+        border-bottom: none;
     }
 }
