@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 2rem;
+}
+
+body {
+    padding: 2em;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+input {
+    display: block;
+    padding: 0.5em 0.8em;
+    border: 2px solid #ccc;
+    outline: none;
+    width: 100%;
+}
+
+input:focus-visible {
+    border-color: #090;
+}
+
+span {
+    font-weight: bold;
+}
+
+fieldset {
+    padding: 2em;
+    border: 2px solid #ccc;
+    max-width: 50ch;
+}
+
+legend {
+    padding: 0 1em;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}
+
+.field {
+    padding-bottom: 1.5em;
+}

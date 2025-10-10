@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 2rem;
+}
+
+body {
+    padding: 2em;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+select {
+    display: block;
+    padding: 0.5em 0.8em;
+    border: 2px solid #ccc;
+    border-radius: 0.3em;
+    min-width: 20ch;
+    min-height: 20ch;
+}

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 2rem;
+}
+
+body {
+    padding: 2em;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+input {
+    display: inline-block;
+    padding: 0.5em 0.8em;
+    border: 2px solid #ccc;
+    outline: none;
+}
+
+input:focus-visible {
+    border-color: #090;
+}
