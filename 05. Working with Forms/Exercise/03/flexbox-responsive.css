@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2rem;
+    width: 1200px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #eee;
+    border: none;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid orange;
+    background-color: orange;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    color: white;
+    transition: all 300ms ease-in-out;
+}
+
+@media(hover:hover) {
+    button:hover {
+        color: orange;
+        background-color: white;
+    }
+}
+
+@media(min-width:600px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .text {
+        flex: 1;
+    }
+
+    .email {
+        flex: 2;
+    }
+}
+
+@media(min-width:800px) {
+    form {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .row {
+        flex: 3;
+    }
+
+    .text {
+        flex: 1;
+    }
+
+    .email {
+        flex: 2;
+    }
+
+    button {
+        flex: 1;
+    }
+
+    input {
+        margin: unset;
+    }
+}
