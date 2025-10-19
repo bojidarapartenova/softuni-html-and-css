@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inder";
+    background-color: #eee;
+    margin: 3rem 4rem;
+}
+
+.container {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding: 1rem 5rem;
+
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.imgSection img {
+    width: 100%;
+    height: 100%;
+}
+
+.imgSection {
+    width: 40%;
+}
+
+.infoSection {
+    width: 60%;
+}
+
+.infoSection .titleHolder {
+    background-color: #eee;
+    border-left: 4px solid #79b830;
+    padding: 2rem;
+}
+
+.titleHolder p {
+    color: #79b830;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+
+.titleHolder .title {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.infoSection .para {
+    margin: 1rem 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.infoSection .info {
+    background-color: #eee;
+    padding: 1rem;
+}
+
+.infoSection .info .buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.infoSection .info .buttons a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+.infoSection .info .buttons .btn-mission {
+    background-color: #79b830;
+    color: white;
+}
+
+.infoSection .info .buttons .btn-vision {
+    background-color: #ddd;
+    color: #79b830;
+}
+
+.infoSection .info .text {
+    color: gray;
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
