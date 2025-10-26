@@ -1,0 +1,241 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'PT Serif', serif;
+}
+
+body,
+p,
+span,
+a,
+li,
+button {
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    font-size: 16px;
+}
+
+
+.heading {
+    background-image: url(images/hero-bg.webp);
+    background-size: cover;
+    height: 670px;
+}
+
+.logo {
+    width: 100%;
+}
+
+.imgHolder {
+    width: 100px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 2rem;
+}
+
+.nav .list .item a {
+    color: #f7de95;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav .list .item {
+    list-style-type: none;
+}
+
+.nav .list {
+    display: flex;
+    gap: 2rem;
+}
+
+.headingSection {
+    margin: 1rem 0 4rem 5rem;
+    margin-bottom: 4rem;
+}
+
+.headingSection .title {
+    color: #fde7b2;
+    font-size: 50px;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+
+.headingSection .text {
+    color: #f7de95;
+    line-height: 1.75rem;
+}
+
+.section-container {
+    width: 100%;
+    border-bottom: 2px solid #fde7b2;
+    display: flex;
+    justify-content: center;
+    background-color: #171720;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .mission-objectives {
+    display: flex;
+    gap: 4rem;
+}
+
+.main .mission-objectives .subtitle,
+.main .partners .subtitle,
+.main .matches .subtitle {
+    color: #fde7b2;
+    font-size: 35px;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+
+.main .mission-objectives .text,
+.main .partners .text,
+.main .matches .text {
+    color: #f7de95;
+    line-height: 1.75rem;
+    margin-bottom: 2.5rem;
+    font-size: 14px;
+}
+
+.main .mission-objectives .button {
+    color: #af815b;
+    text-decoration: none;
+    border: 2px solid #af815b;
+    padding: 0.5rem 0.75rem;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.main .mission-objectives .mission {
+    margin: 4rem 0 4rem 6rem;
+}
+
+.main .mission-objectives .objectives {
+    margin: 4rem 6rem 4rem 0;
+}
+
+.partners-container {
+    background-color: #171720;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main .partners {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.main .partners .imageContainer {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.main .partners .partner {
+    width: 120px;
+    height: 120px;
+    background-color: #3f3e45;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.matches-container {
+    width: 100%;
+    background-color: #fff8f0;
+    display: flex;
+    justify-content: center;
+}
+
+.main .matches {
+    text-align: center;
+    margin: 4rem;
+    width: 50%;
+}
+
+.main .matches .subtitle {
+    color: #af815b;
+}
+
+.main .matches .text {
+    color: black;
+}
+
+.main .matches .upcoming {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main .matches .upcoming .match {
+    background-color: #f4e3d0;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    border-left: 4px solid #af815b;
+}
+
+.footer-container {
+    width: 100%;
+    background-color: #171720;
+    border-bottom: 1px solid #b2a5a6;
+}
+
+.footer {
+    margin: auto 12rem;
+}
+
+.footer p {
+    color: #b2a5a6;
+    font-size: 12px;
+}
+
+.footer h3 {
+    color: white;
+    margin-bottom: 1.25rem;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.footer .info {
+    display: flex;
+    gap: 10rem;
+}
+
+.footer .section:not(:first-of-type) {
+    line-height: 1.75rem;
+}
+
+.rights-container {
+    width: 100%;
+    background-color: #171720;
+}
+
+.rights-container .rights .text {
+    color: #b2a5a6;
+    font-size: 12px;
+    padding: 1rem 0 4rem 12rem;
+}
