@@ -1,0 +1,27 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon files on macOS
+Icon?
+
+# Thumbnails
+._*
+
+# VS Code settings
+.vscode/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.old
+
+# Build/output folders
+dist/
+build/
+.cache/
+
+# Node dependencies (if any)
+node_modules/
